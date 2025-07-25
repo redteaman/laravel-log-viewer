@@ -1,0 +1,22 @@
+{
+  "name": "redteaman/laravel-log-viewer",
+  "description": "A log viewer module for Laravel",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Redteaman\\LogViewer\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Redteaman\\LogViewer\\LogViewerServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^10.0|^11.0|^12.0"
+  }
+}

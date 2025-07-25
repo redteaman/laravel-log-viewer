@@ -202,7 +202,7 @@
 
             // 🧩 1. 載入 log 檔案清單
             async function loadLogList(search = '') {
-                const res = await fetch(`${API_URL}?search=${encodeURIComponent(search)}`);
+                const res = await fetch(`${API_URL}/list?search=${encodeURIComponent(search)}`);
                 const json = await res.json();
                 if (!json.status) return;
 

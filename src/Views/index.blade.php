@@ -1,0 +1,1 @@
+<h1>✅ Log Viewer Blade 頁面</h1>

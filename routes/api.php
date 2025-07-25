@@ -1,10 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\API\LogViewerController;
-
+use Redteaman\LogViewer\Controllers\LogViewerAPIController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +14,7 @@ use App\Http\Controllers\API\LogViewerController;
 |
 */
 
-
-Route::prefix('log_viewer')->group(function () {
-    Route::get('/', [LogViewerController::class, 'list']);
-    Route::get('/view', [LogViewerController::class, 'view']);
+Route::prefix('log-viewer')->group(function () {
+    Route::get('/list', [LogViewerAPIController::class, 'list']);
+    Route::get('/view', [LogViewerAPIController::class, 'view']);
 });
